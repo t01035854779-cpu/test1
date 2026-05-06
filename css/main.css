@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Playwrite+NO:wght@100..400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+.member1 {
+  background-color: #edffed;
+}
+/* 전체 레이아웃 */
+section {
+  width: 390px;
+  margin: auto;
+  padding: 30px;
+  background-color: #fff;
+}
+/* 메뉴 */
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menu a {
+  color: #aaa;
+  font-size: 20px;
+}
+/* 프로필 영역 */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  text-align: center;
+  gap: 15px;
+}
+/* 이미지 */
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile-img img {
+  width: 100%;
+  display: block;
+  transition: all 0.3s;
+}
+.profile-img:hover img{
+    transform: scale(1.1);
+    filter: blur(2);
+    cursor: pointer;
+}
+/* 이름 */
+.profile-name h1 {
+  font-size: 22px;
+  color: #555;
+  text-transform: uppercase;
+}
+.profile-name p {
+  font-size: 12px;
+  color: #706f6f;
+}
+/* 더보기 */
+.btn-view {
+  padding: 20px;
+  counter-reset: #fff;
+  background: linear-gradient(45deg, #10fcf0, #7592fc, #fca910);
+  border-radius: 24px;
+  box-shadow: 5px 5px 20px rgba(0, 140, 255, 0.5);
+}
+/* 연락처 영역 */
+.link-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+/* .contact{
+    background-color: yellowgreen;
+} */
+.contact li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+.contact li:last-child{
+    border: none;
+}
+.contact li i {
+  font-size: 14px;
+  color: #666;
+  text-shadow: 2px 2px 2px #ddd;
+}
+.contact li span {
+  font-family: "Orbitron", sans-serif;
+  font-size: 12px;
+  color: #777;
+}
+/* 멤버별 프로필  링크 */
+.others{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.others a{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: pink;
+    opacity: 0.4;
+    filter: saturate(0.7);
+}
+.others a:nth-of-type(1){
+    background-color: #35e0f7;
+}
+.others a:nth-of-type(2){
+    background-color: #55f5cd;
+}
+.others a:nth-of-type(3){
+    background-color: #ff80df;
+}
+.others a:nth-of-type(4){
+    background-color: #a794fd;
+}
+.others a.on{
+    opacity: 1;
+    filter: saturate(1);
+}
